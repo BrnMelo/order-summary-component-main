@@ -110,7 +110,7 @@ body {
 .proceed_btn{
     width:100%;
 
-    padding: 1.25em 0 1.25em 0;
+    padding: 1em 0 1em 0;
     margin: 2em 0 2em 0;
 
     border-radius: 1em;
@@ -161,17 +161,59 @@ body {
 
 @media only screen and (min-width: 900px){
     body { 
-        padding: 5em 450px 5em 450px ;
         background: url(../images/pattern-background-desktop.svg) no-repeat var(--pale_blue);
+
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 7.5em 0 0 0;
+    }
+
+    .summary_card{
+        width: 450px;
+
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+    }
+
+    .summary_card img{
+    border-radius: 1em 1em 0 0;
     }
 
     .card_content{
         padding: 0 3em 0 3em;
     }
 
+    .title{
+        font-size: 1.85em;
+
+        padding: 1.5em 0 1em 0;
+    }
+
+    .description {
+        padding: 0 1.5em 1em 1.5em;
+    }
+
     .card_plan {
         height: 95px;
         grid-template-columns: 16px 2fr 1fr;
 
+    }
+
+    .proceed_btn{
+        width: 100%;
+
+        font-size: 0.85em;
+        font-weight: 900;
+
+        padding: 1.2em 0 1.2em 0;
+
+        border-radius: 0.85em;
+    }
+
+    .cancel_order{
+        height:80px;
     }
 }
